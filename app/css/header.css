@@ -1,135 +1,61 @@
-@import url(../fonts/ft40/ft40.css);
-@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
-@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 .header {
-  background: url("../img/boks-ring-sprot.png") no-repeat center/cover;
-  padding: 60px 0;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative; }
-  .header:before {
-    background: url("../img/shines/top.png") no-repeat 0 center/cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
-  .header__container {
-    border-left: 2px solid #fff;
-    min-height: 45vh; }
-  .header__nav {
+  background: #8e723f;
+  border-top: 5px solid #78603e; }
+  .header-top {
+    height: 60px; }
+  .header__logo-link {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 30px;
-    -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-            transform: translateY(-10px); }
-    .header__nav-link {
-      border-bottom: 1px solid transparent;
-      display: block;
-      font-size: 13px;
-      font-weight: 800;
-      color: #fefefe;
-      font-family: 'AG Book Pro Bold', sans-serif;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-align: center;
-      -webkit-transform: scale(1, 1.19);
-          -ms-transform: scale(1, 1.19);
-              transform: scale(1, 1.19); }
-      .header__nav-link:hover {
-        border-bottom: 1px solid #ff3323;
-        color: #ffffff;
-        text-decoration: none;
-        -webkit-transition: all 0.3s linear;
-        -o-transition: all 0.3s linear;
-        transition: all 0.3s linear; }
-      .header__nav-link img {
-        margin-right: 15px;
-        height: 31px; }
-    .header__nav-item {
-      margin-right: 15px; }
-      .header__nav-item-last {
-        letter-spacing: 1px;
-        justify-self: flex-end;
-        margin-left: auto;
-        margin-right: 0; }
-        .header__nav-item-last .header__nav-link {
-          font-size: 18px;
-          font-family: 'AG Book Pro Regular', sans-serif;
-          font-weight: 300;
-          color: white;
-          -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-                  transform: scale(1); }
-          .header__nav-item-last .header__nav-link:hover {
-            border-bottom: 1px solid transparent; }
-  .header__title {
-    position: absolute;
-    bottom: 0;
-    left: 60px; }
-    .header__title-red {
-      font-size: 47px;
-      font-family: 'AG Book Pro Regular', sans-serif;
-      color: #ff3323;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      line-height: 1.2; }
-    .header__title-default {
-      display: block;
-      font-size: 56px;
-      font-family: 'AG Book Pro Bold', sans-serif;
-      font-weight: 800;
-      letter-spacing: 3px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .header__logo-link:hover {
+      color: #ffffff;
+      text-decoration: none; }
+  .header__logo-text {
+    display: block;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0 15px; }
+    .header__logo-text-big {
+      font-size: 32px; }
+  .header__town {
+    padding: 0 15px; }
+    .header__town-text {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
       color: white;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-align: center;
-      -webkit-transform: scale(1, 1.19);
-          -ms-transform: scale(1, 1.19);
-              transform: scale(1, 1.19); }
-
-.mouse {
-  cursor: pointer;
-  text-align: center;
-  position: relative;
-  -webkit-animation-name: updown;
-          animation-name: updown;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  padding-top: 20px;
-  z-index: 11; }
-  .mouse__image {
-    cursor: pointer; }
-
-@-webkit-keyframes updown {
-  0% {
-    top: 0; }
-  50% {
-    top: 50px; }
-  100% {
-    top: 0; } }
-
-@keyframes updown {
-  0% {
-    top: 0; }
-  50% {
-    top: 50px; }
-  100% {
-    top: 0; } }
+      line-height: 1.2; }
+    .header__town-select {
+      background: unset;
+      border: none;
+      color: #d7b475;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif; }
+  .header__list {
+    padding: 0 15px; }
+    .header__list-item {
+      display: inline-block;
+      margin-right: 10px; }
+      .header__list-item:last-child {
+        margin-right: 0; }
+    .header__list-link {
+      color: #fff;
+      display: block;
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: underline;
+      line-height: 1.2; }
+      .header__list-link:hover {
+        color: #fff; }
+  .header__ankets {
+    justify-self: flex-end;
+    margin-left: auto; }
