@@ -1,0 +1,103 @@
+//radio btn
+.radio
+  text-align: left
+  margin: 0
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  &-wrap
+    cursor: pointer
+    display: inline-block
+    position: relative
+    padding: 0
+    margin-bottom: 10px
+    margin-right: 10px
+    width: 95.88px
+    &:nth-of-type(2n)
+      margin-right: 0
+    &:last-child
+      margin-right: 0
+  &__input
+    display: none
+  &__text
+    background: #f4d498
+    font-size: 14px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1
+    letter-spacing: normal
+    color: #000000
+    padding: 0.5rem
+    border-radius: 2px
+    display: inline-block
+    text-align: center
+    width: 100%
+  &__input:checked ~ .radio__text
+    color: #000000
+    background-color: #d49e3d
+//radio btn
+//checkbox btn
+.checkbox-wrap
+  height: 25px
+  display: inline-block
+  position: relative
+  padding-left: 30px
+  cursor: pointer
+  color: rgb(37, 37, 37)
+  font-size: 14px
+  user-select: none
+  text-align: left
+  margin-right: 25px
+  &:last-child
+    margin-right: 0
+  input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+  &__value
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+/* Create a custom checkbox */
+.checkbox__text
+  border-radius: 4px
+  position: absolute
+  top: 0
+  left: 0
+  height: 25px
+  width: 25px
+  background-color: #f1cc88
+
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-wrap input:checked ~ .checkbox__text
+  background-color: #956a2c
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox__text:after
+  content: ""
+  position: absolute
+  display: none
+
+
+/* Show the checkmark when checked */
+.checkbox-wrap input:checked ~ .checkbox__text:after
+  display: block
+
+
+/* Style the checkmark/indicator */
+.checkbox-wrap .checkbox__text:after
+  left: 9px
+  top: 5px
+  width: 7px
+  height: 12px
+  border: solid white
+  border-width: 0 2px 2px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+
+//checkbox btn

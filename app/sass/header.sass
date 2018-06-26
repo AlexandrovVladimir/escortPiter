@@ -5,6 +5,9 @@
 .header
   background: #8e723f
   border-top: 5px solid #78603e
+  position: fixed
+  width: 100%
+  z-index: 10
   &-top
     height: 60px
   &__logo
@@ -16,7 +19,7 @@
         text-decoration: none
     &-text
       display: block
-      font-size: 16px
+      font-size: 14px
       font-family: $font-default
       color: rgb(255, 255, 255)
       font-weight: bold
@@ -25,7 +28,7 @@
       line-height: 1
       padding: 0 15px
       &-big
-        font-size: 32px
+        font-size: 28px
   &__town
     padding: 0 15px
     &-text
@@ -34,11 +37,14 @@
       color: rgb(255, 255, 255)
       line-height: 1.2
     &-select
-      background: unset
+      background: transparent url("../img/select.png") no-repeat 99% center
       border: none
       color: #d7b475
       font-size: 14px
       font-family: $font-default
+      padding-right: 20px
+      &:focus
+        outline: none
   &__list
     padding: 0 15px
     &-item
@@ -49,12 +55,74 @@
     &-link
       color: #fff
       display: block
-      font-size: 16px
+      font-size: 14px
       font-family: $font-default
       text-decoration: underline
       line-height: 1.2
       &:hover
-        color: #fff
+        color: #d7b475
+        text-decoration: none
   &__ankets
+    cursor: pointer
     justify-self: flex-end
     margin-left: auto
+    &-wrap
+      background: #6b512c
+      border-radius: 2px
+      padding: 5px 10px
+      transition: background 0.3s linear
+      &:hover
+        background: #845c22
+    &-text
+      font-size: 14px
+      font-family: $font-default
+      color: rgb(255, 255, 255)
+      line-height: 1.2
+
+.girls
+  padding-top: 63px
+  &__item
+    position: relative
+  &__name
+    background: rgba(47, 26, 3, 0.702)
+    color: #ffffff
+    cursor: pointer
+    position: absolute
+    bottom: 28px
+    font-size: 12px
+    font-family: $font-default
+    line-height: 1.2
+    width: 100%
+    text-align: center
+    padding: 5px 0
+    &:hover
+      color: rgb(255, 3, 3)
+      text-decoration: none
+  &__cost
+    background: #2f1a03
+    color: #ffffff
+    position: absolute
+    bottom: 0
+    width: 100%
+    text-align: center
+    padding: 5px 0
+    &-default
+      font-size: 11.298px
+      font-family: $font-default
+      font-weight: bold
+      line-height: 1.2
+      text-align: left
+    &-red
+      font-size: 14px
+      font-family: $font-default
+      color: rgb(255, 3, 3)
+      font-weight: bold
+      line-height: 1.2
+
+.settings
+  background-color: #ffffff
+  margin-bottom: 15px
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.26)
+  &-wrap
+    height: 60px
+

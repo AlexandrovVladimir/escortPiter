@@ -2,6 +2,8 @@
 @import 'mixins'
 @import 'fonts'
 @import 'header.sass'
+@import 'index-page.sass'
+@import 'footer.sass'
 //@font-face
 //	font-family: "MyriadProSemiBold"
 //	src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot")
@@ -21,6 +23,7 @@ html
 	height: 100%
 
 body
+	background: #f1ebde
 	margin: 0
 	padding: 0
 
@@ -28,5 +31,55 @@ ul
 	padding: 0
 	margin: 0
 	list-style: none
+
+select
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+
+label
+	margin-bottom: 0
+
+.hr
+	&__index
+		border-top: 1px dashed #b5ab96
+		margin: 1rem 0 0.5rem
+	&__sidebar
+		border-top: 1px dashed #b5ab96
+		margin: 7.5px 15.5px 16px
+		width: 100%
+
+.half
+	width: 50%
+	float: left
+	position: relative
+	&:after
+		clear: both
+		content: ''
+		display: block
+
+.more
+	display: block
+	color: #ff0303
+	font-size: 12px
+	text-decoration: underline
+	text-align: right
+	&:hover
+		color: #ff0303
+		text-decoration: none
+
+.anchor
+	background: #8e723f url("../img/arrow-top.png") no-repeat center
+	cursor: pointer
+	position: absolute
+	right: -150px
+	top: -150px
+	width: 75px
+	height: 75px
+	border-radius: 50%
+	&:hover
+		background-color: #b58033
+.slick-slide
+	line-height: 1.1
 
 @import "media"

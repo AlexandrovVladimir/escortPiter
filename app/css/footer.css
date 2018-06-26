@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+.footer {
+  background: #f4d498;
+  margin-top: 25px; }
+  .footer-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 100%;
+    height: 50px; }
+    .footer-list__link {
+      color: #fe1d15;
+      text-decoration: underline; }
+      .footer-list__link:hover {
+        color: #fe1d15;
+        text-decoration: none; }
+    .footer-list__item {
+      margin-right: 50px; }
+      .footer-list__item:last-child {
+        justify-self: flex-end;
+        margin-left: auto;
+        margin-right: 0; }
