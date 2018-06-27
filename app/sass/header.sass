@@ -5,11 +5,12 @@
 .header
   background: #8e723f
   border-top: 5px solid #78603e
-  position: fixed
   width: 100%
   z-index: 10
+  .container
+    padding: 0
   &-top
-    height: 60px
+    min-height: 60px
   &__logo
     &-link
       display: flex
@@ -26,19 +27,24 @@
       letter-spacing: 1px
       text-transform: uppercase
       line-height: 1
-      padding: 0 15px
+      padding-left: 12px
+      padding-top: 5px
+      &-normal
+        font-size: 16px
       &-big
-        font-size: 28px
+        font-size: 31px
   &__town
-    padding: 0 15px
+    padding-left: 40px
+    margin-right: 5px
     &-text
       font-size: 14px
       font-family: $font-default
       color: rgb(255, 255, 255)
       line-height: 1.2
     &-select
-      background: transparent url("../img/select.png") no-repeat 99% center
+      background: transparent url("../img/select.png") no-repeat 97% center
       border: none
+      cursor: pointer
       color: #d7b475
       font-size: 14px
       font-family: $font-default
@@ -46,10 +52,10 @@
       &:focus
         outline: none
   &__list
-    padding: 0 15px
+    padding-left: 44px
     &-item
       display: inline-block
-      margin-right: 10px
+      margin-right: 16px
       &:last-child
         margin-right: 0
     &-link
@@ -64,23 +70,39 @@
         text-decoration: none
   &__ankets
     cursor: pointer
-    justify-self: flex-end
-    margin-left: auto
     &-wrap
       background: #6b512c
       border-radius: 2px
-      padding: 5px 10px
+      padding: 2px 12px
       transition: background 0.3s linear
+      img
+        margin-right: 5px
       &:hover
         background: #845c22
     &-text
       font-size: 14px
       font-family: $font-default
-      color: rgb(255, 255, 255)
+      color: #ff0303
       line-height: 1.2
+  &-mobile
+    &__list
+      flex: 0 0 100%
+      margin: 10px 0
+      display: none
+    &__link
+      color: #fff
+      display: block
+      font-size: 14px
+      font-family: $font-default
+      text-decoration: underline
+      line-height: 1.2
+      padding: 5px 0
 
 .girls
-  padding-top: 63px
+  &__image
+    img
+      width: 100%
+      height: 150px
   &__item
     position: relative
   &__name
@@ -89,7 +111,7 @@
     cursor: pointer
     position: absolute
     bottom: 28px
-    font-size: 12px
+    font-size: 13px
     font-family: $font-default
     line-height: 1.2
     width: 100%
@@ -113,7 +135,7 @@
       line-height: 1.2
       text-align: left
     &-red
-      font-size: 14px
+      font-size: 15px
       font-family: $font-default
       color: rgb(255, 3, 3)
       font-weight: bold
@@ -121,8 +143,130 @@
 
 .settings
   background-color: #ffffff
-  margin-bottom: 15px
+  margin-bottom: 11px
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.26)
+  .container
+    padding: 0
   &-wrap
     height: 60px
+    .col-lg-6
+      padding: 0
 
+.district
+  cursor: pointer
+  float: left
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-wrap: wrap
+  margin-right: 25px
+  &:hover
+    .district__icon
+      background-color: #d49e3d
+  &-sub
+    background: #ffffff
+    border: 2px solid #8e723f
+    border-radius: 2px
+    position: absolute
+    top: 120%
+    width: 1110px
+    display: none
+    z-index: 1
+    &__item
+      display: block
+      font-size: 13px
+      font-family: $font-default
+      color: rgb(0, 0, 0)
+      padding: 5px 15px
+      &:hover
+        background: #8e723f
+        color: #ffffff
+  &__open
+    display: flex
+  &__name
+    background: #956a2c url("../img/location.png") no-repeat 10px center
+    border-bottom-left-radius: 2px
+    border-top-left-radius: 2px
+    color: #ffffff
+    font-size: 14px
+    font-family: $font-default
+    line-height: 1.2
+    width: 88px
+    height: 35px
+    display: flex
+    align-items: center
+    padding-left: 35px
+  &__icon
+    background: #f1cc88 url(../img/icon.png) no-repeat center
+    border-radius: 2px
+    display: inline-block
+    width: 35px
+    height: 35px
+
+.metro
+  cursor: pointer
+  float: left
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-wrap: wrap
+  &:hover
+    .metro__icon
+      background-color: #d49e3d
+  &-sub
+    background: #ffffff
+    border: 2px solid #8e723f
+    border-radius: 2px
+    position: absolute
+    top: 120%
+    left: 15px
+    width: 1110px
+    display: none
+    z-index: 1
+    &__item
+      display: block
+      font-size: 13px
+      font-family: $font-default
+      color: rgb(0, 0, 0)
+      padding: 5px 15px
+      &:hover
+        color: #fb0505
+        text-decoration: underline
+  &__open
+    display: flex
+  &__name
+    background: #956a2c url("../img/metro-white.png") no-repeat 10px center
+    border-bottom-left-radius: 2px
+    border-top-left-radius: 2px
+    color: #ffffff
+    font-size: 14px
+    font-family: $font-default
+    line-height: 1.2
+    width: 88px
+    height: 35px
+    display: flex
+    align-items: center
+    padding-left: 35px
+  &__icon
+    background: #f1cc88 url(../img/icon.png) no-repeat center
+    border-radius: 2px
+    display: inline-block
+    width: 35px
+    height: 35px
+
+.burger
+  border: 1px solid #fff
+  border-radius: 6px
+  display: inline-block
+  padding: 5px
+  &-wrap
+    display: none
+    padding: 10px 0
+  &__icon
+    background-color: #fff
+    display: block
+    width: 20px
+    height: 2px
+    margin-bottom: 5px
+    &:last-child
+      margin-bottom: 0

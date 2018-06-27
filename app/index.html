@@ -63,17 +63,43 @@
 						<li class="header__list-item">
 							<a href="" class="header__list-link">Интим карта</a>
 						</li>
-					</ul>
-				</div>
-				<div class="header__ankets">
-					<div class="header__ankets-wrap">
-						<img src="img/write.png" alt="write">
-						<span class="header__ankets-text">
+						<li class="header__list-item">
+							<div class="header__ankets">
+								<div class="header__ankets-wrap">
+									<img src="img/write.png" alt="write">
+									<span class="header__ankets-text">
 							Подбор анкеты
 						</span>
-					</div>
-
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
+				<div class="burger-wrap">
+					<div class="burger">
+						<span class="burger__icon"></span>
+						<span class="burger__icon"></span>
+						<span class="burger__icon"></span>
+					</div>
+				</div>
+
+				<ul class="header-mobile__list">
+					<li class="header-mobile__item">
+						<a href="" class="header-mobile__link">Индивидуалки</a>
+					</li>
+					<li class="header-mobile__item">
+						<a href="" class="header-mobile__link">Массажистки</a>
+					</li>
+					<li class="header-mobile__item">
+						<a href="" class="header-mobile__link">Стриптиз</a>
+					</li>
+					<li class="header-mobile__item">
+						<a href="" class="header-mobile__link">С видео</a>
+					</li>
+					<li class="header-mobile__item">
+						<a href="" class="header-mobile__link">Интим карта</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</header>
@@ -304,8 +330,67 @@
 	<div class="settings">
 		<div class="container">
 			<div class="row settings-wrap align-items-center">
-				<div class="col-md-6"></div>
-				<div class="col-md-6">
+				<div class="col-lg-6">
+					<div class="settings__district district">
+						<span class="district__name">Район</span>
+						<span class="district__icon"></span>
+						<div class="district-sub row no-gutters">
+							<div class="col-md-2">
+								<div class="district-sub__item">Адмиралтейский</div>
+								<div class="district-sub__item">Василеостровский</div>
+								<div class="district-sub__item">Выборгский</div>
+								<div class="district-sub__item">Калининский</div>
+							</div>
+							<div class="col-md-2">
+								<div class="district-sub__item">Кировский</div>
+								<div class="district-sub__item">Колпинский</div>
+								<div class="district-sub__item">Красногвардейский</div>
+								<div class="district-sub__item">Красносельский</div>
+							</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-2"></div>
+							<div class="col-md-2">
+								<div class="district-sub__item">Фрунзенский</div>
+							</div>
+						</div>
+					</div>
+					<div class="settings__metro metro">
+						<span class="metro__name">Метро</span>
+						<span class="metro__icon"></span>
+						<div class="metro-sub row no-gutters">
+							<div class="col-md-2">
+								<div class="metro-sub__item">Санкт-Петербург</div>
+								<div class="metro-sub__item">Москва</div>
+								<div class="metro-sub__item">Абакан</div>
+								<div class="metro-sub__item">Адлер</div>
+								<div class="metro-sub__item">Анапа</div>
+								<div class="metro-sub__item">Архангельск</div>
+								<div class="metro-sub__item">Астрахань</div>
+								<div class="metro-sub__item">Барнаул</div>
+								<div class="metro-sub__item">Белгород</div>
+								<div class="metro-sub__item">Бийск</div>
+								<div class="metro-sub__item">Брянск</div>
+								<div class="metro-sub__item">Владивосток</div>
+								<div class="metro-sub__item">Владимир</div>
+								<div class="metro-sub__item">Волгоград</div>
+								<div class="metro-sub__item">Вологда</div>
+								<div class="metro-sub__item">Воронеж</div>
+							</div>
+							<div class="col-md-2">
+								<div class="metro-sub__item">Кировский</div>
+								<div class="metro-sub__item">Колпинский</div>
+								<div class="metro-sub__item">Красногвардейский</div>
+								<div class="metro-sub__item">Красносельский</div>
+							</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-2"></div>
+							<div class="col-md-2">
+								<div class="metro-sub__item">Фрунзенский</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
 					<div class="settings__checkbox text-right">
 						<label class="checkbox-wrap">
 							<span class="checkbox-wrap__value">Новые</span>
@@ -332,9 +417,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container container-sidebar">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-4 col-lg-3 sidebar-wrap">
+				<div class="sidebar__title-mobile">Фильтр</div>
 				<div class="sidebar">
 					<div class="sidebar__title">Цена за час</div>
 					<div class="sidebar__row">
@@ -356,44 +442,50 @@
 						</label>
 						<hr class="hr__sidebar">
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 1000 руб.</a>
+							<a href="#" class="sidebar__filter-link">Дорогие</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 2500 руб.</a>
+							<a href="#" class="sidebar__filter-link">Недорогие</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 5000 руб.</a>
+							<a href="#" class="sidebar__filter-link">Элитные</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 9000 руб.</a>
+							<a href="#" class="sidebar__filter-link">VIP</a>
 						</label>
 					</div>
 					<div class="sidebar__title">Возраст</div>
 					<div class="sidebar__row">
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 1000 руб.</a>
+							<a href="#" class="sidebar__filter-link">до 20 лет</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 2500 руб.</a>
+							<a href="#" class="sidebar__filter-link">до 25 лет</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 5000 руб.</a>
+							<a href="#" class="sidebar__filter-link">до 25 лет</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 9000 руб.</a>
+							<a href="#" class="sidebar__filter-link">до 30 лет</a>
+						</label>
+						<label class="sidebar__filter">
+							<a href="#" class="sidebar__filter-link">до 35 лет</a>
+						</label>
+						<label class="sidebar__filter">
+							<a href="#" class="sidebar__filter-link">> 35 лет</a>
 						</label>
 						<hr class="hr__sidebar">
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 1000 руб.</a>
+							<a href="#" class="sidebar__filter-link">Молодые</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 2500 руб.</a>
+							<a href="#" class="sidebar__filter-link">Старые</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 5000 руб.</a>
+							<a href="#" class="sidebar__filter-link">Зрелые</a>
 						</label>
 						<label class="sidebar__filter">
-							<a href="#" class="sidebar__filter-link">до 9000 руб.</a>
+							<a href="#" class="sidebar__filter-link">Студентки</a>
 						</label>
 					</div>
 					<div class="sidebar__title">Вес</div>
@@ -510,8 +602,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-9 content">
-				<div class="row content__pagination-wrap align-items-center justify-content-between">
+			<div class="col-md-8 col-lg-9 content">
+				<div class="row no-gutters content__pagination-wrap align-items-center justify-content-between">
 					<div class="content__title">Все проститутки Питера</div>
 					<ul class="content__pagination">
 						<li class="content__pagination-item active"><a href="#" class="content__pagination-link">1</a></li>
@@ -520,8 +612,8 @@
 						<li class="content__pagination-item"><a href="#" class="content__pagination-link">4</a></li>
 					</ul>
 				</div>
-				<div class="row justify-content-between content__grid grid no-gutters">
-					<div class="col-md-4">
+				<div class="row no-gutters justify-content-between content__grid grid">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -534,7 +626,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -571,7 +663,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -584,7 +676,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -621,7 +713,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -634,7 +726,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -671,7 +763,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -684,7 +776,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -721,7 +813,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -734,7 +826,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -771,7 +863,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -784,7 +876,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -821,7 +913,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -834,7 +926,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -871,7 +963,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -884,7 +976,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -921,7 +1013,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -934,7 +1026,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -971,7 +1063,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -984,7 +1076,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -1021,7 +1113,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -1034,7 +1126,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -1071,7 +1163,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-lg-4">
 						<div class="grid__item">
 							<div class="half">
 								<div class="grid__name">Ксюша</div>
@@ -1084,7 +1176,7 @@
 							<div class="half">
 								<a href="#" class="grid__logo">
 									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
-									<span class="grid__logo-text">Плошадь А. Невского</span>
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
 								</a>
 								<div class="grid__naming">ЦЕНЫ (руб)</div>
 								<div class="grid__row">
@@ -1121,7 +1213,156 @@
 							</div>
 						</div>
 					</div>
-
+					<div class="col-md-6 col-lg-4">
+						<div class="grid__item">
+							<div class="half">
+								<div class="grid__name">Ксюша</div>
+								<div class="grid__phone">+7 (911) 282-32-11</div>
+								<div class="grid__image">
+									<a href="#" class="grid__image-link"><img src="img/girl-big.jpg" alt="girl"></a>
+								</div>
+								<div class="grid__label">Фото проверено</div>
+							</div>
+							<div class="half">
+								<a href="#" class="grid__logo">
+									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
+								</a>
+								<div class="grid__naming">ЦЕНЫ (руб)</div>
+								<div class="grid__row">
+									<div class="grid__time">1 час</div>
+									<div class="grid__price">2500</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__time">2 часа</div>
+									<div class="grid__price">4000</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__time">Ночь</div>
+									<div class="grid__price">12000</div>
+								</div>
+								<hr class="hr__index">
+								<div class="grid__naming">ОБО МНЕ</div>
+								<div class="grid__row">
+									<div class="grid__text">Возраст</div>
+									<div class="grid__text">14</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Рост</div>
+									<div class="grid__text">169</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Вес</div>
+									<div class="grid__text">50</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Грудь</div>
+									<div class="grid__text">3</div>
+								</div>
+								<a href="#" class="more">Подробнее...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="grid__item">
+							<div class="half">
+								<div class="grid__name">Ксюша</div>
+								<div class="grid__phone">+7 (911) 282-32-11</div>
+								<div class="grid__image">
+									<a href="#" class="grid__image-link"><img src="img/girl-big.jpg" alt="girl"></a>
+								</div>
+								<div class="grid__label">Фото проверено</div>
+							</div>
+							<div class="half">
+								<a href="#" class="grid__logo">
+									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
+								</a>
+								<div class="grid__naming">ЦЕНЫ (руб)</div>
+								<div class="grid__row">
+									<div class="grid__time">1 час</div>
+									<div class="grid__price">2500</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__time">2 часа</div>
+									<div class="grid__price">4000</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__time">Ночь</div>
+									<div class="grid__price">12000</div>
+								</div>
+								<hr class="hr__index">
+								<div class="grid__naming">ОБО МНЕ</div>
+								<div class="grid__row">
+									<div class="grid__text">Возраст</div>
+									<div class="grid__text">14</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Рост</div>
+									<div class="grid__text">169</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Вес</div>
+									<div class="grid__text">50</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Грудь</div>
+									<div class="grid__text">3</div>
+								</div>
+								<a href="#" class="more">Подробнее...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="grid__item">
+							<div class="half">
+								<div class="grid__name">Ксюша</div>
+								<div class="grid__phone">+7 (911) 282-32-11</div>
+								<div class="grid__image">
+									<a href="#" class="grid__image-link"><img src="img/girl-big.jpg" alt="girl"></a>
+								</div>
+								<div class="grid__label">Фото проверено</div>
+							</div>
+							<div class="half">
+								<a href="#" class="grid__logo">
+									<img src="img/girl-big-logo.png" alt="logo" class="grid__logo-img">
+									<span class="grid__logo-text">Плошадь <br> А. Невского</span>
+								</a>
+								<div class="grid__naming">ЦЕНЫ (руб)</div>
+								<div class="grid__row">
+									<div class="grid__time">1 час</div>
+									<div class="grid__price">2500</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__time">2 часа</div>
+									<div class="grid__price">4000</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__time">Ночь</div>
+									<div class="grid__price">12000</div>
+								</div>
+								<hr class="hr__index">
+								<div class="grid__naming">ОБО МНЕ</div>
+								<div class="grid__row">
+									<div class="grid__text">Возраст</div>
+									<div class="grid__text">14</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Рост</div>
+									<div class="grid__text">169</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Вес</div>
+									<div class="grid__text">50</div>
+								</div>
+								<div class="grid__row">
+									<div class="grid__text">Грудь</div>
+									<div class="grid__text">3</div>
+								</div>
+								<a href="#" class="more">Подробнее...</a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="row justify-content-center">
 					<ul class="content__pagination">
@@ -1162,6 +1403,7 @@
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/filter-toggle.js"></script>
 
 </body>
 </html>

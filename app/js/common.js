@@ -1,5 +1,7 @@
 (function (){
     $('.girls__viewport').slick({
+        autoplay: true,
+        autoplaySpeed: 1500,
         arrows: false,
         dots: false,
         infinite: true,
@@ -96,4 +98,39 @@
         return false;
     });
     //    anchor top
+
+    //district and
+    //metro
+    const district = document.querySelector('.district');
+    const metro = document.querySelector('.metro');
+
+    district.addEventListener('click', function(e) {
+        if (this.classList.contains('district__open')) {
+            this.classList.remove('district__open');
+            this.lastElementChild.style.display = 'none';
+        } else {
+            this.classList.add('district__open');
+            this.lastElementChild.style.display = 'flex';
+            metro.classList.remove('district__open');
+            metro.lastElementChild.style.display = 'none';
+        }
+    });
+    metro.addEventListener('click', function(e) {
+        if (this.classList.contains('metro__open')) {
+            this.classList.remove('metro__open');
+            this.lastElementChild.style.display = 'none';
+        } else {
+            this.classList.add('metro__open');
+            this.lastElementChild.style.display = 'flex';
+            district.classList.remove('district__open');
+            district.lastElementChild.style.display = 'none';
+        }
+    });
+    //district and
+    //metro
+
+    //mobile menu
+    $('.burger').click(function() {
+        $(this).parent().next().next().toggle('fast');
+    })
 })();

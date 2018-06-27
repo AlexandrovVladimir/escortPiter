@@ -1,0 +1,120 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+@import 'custom-inputs.sass'
+
+@media screen and (max-width: 1450px)
+  .anchor
+    display: none
+
+@media screen and (max-width: 1199px)
+  .header__town-select, .header__town-text
+    font-size: 12px
+  .container-sidebar,
+  .settings .container,
+  .header .container
+    padding: 0 15px
+  .grid__logo-text
+    font-size: 10px
+  .district-sub,
+  .metro-sub
+    width: 938px
+  .sidebar__filter-link
+    font-size: 11px
+  .sidebar__filter
+    width: 80px
+  .grid__phone
+    font-size: 11px
+  .grid .half:first-child, .grid .half:last-child
+    padding: 5px
+  .grid__label
+    left: 5px
+    padding: 2.5px
+  .header__town
+    padding: 0
+  .header__logo-text
+    padding: 0 5px
+  .header__logo-text-big
+    font-size: 26px
+  .header__logo-text-normal
+    font-size: 13px
+  .header__ankets-wrap
+    padding: 5px
+  .header__list-link, .header__ankets-text
+    font-size: 11px
+  .footer-list__link, .footer-list__item
+    font-size: 12px
+
+@media screen and (max-width: 767px)
+  .girls
+    display: none
+  .header__logo-link
+    justify-content: flex-start
+  .header__list
+    display: none
+  .header__logo
+    flex: 0 0 50%
+  .header__list
+    padding: 0
+  .header__nav
+    display: none
+  .burger-wrap
+    display: flex
+    align-items: center
+    flex: 0 0 50%
+  .header__town-select, .header__town-text
+    font-size: 11px
+  .sidebar__title-mobile
+    background: #956a2c url("../img/select.png") no-repeat 97.5% center
+    border-radius: 2px
+    font-size: 14px
+    font-family: $font-default
+    color: white
+    font-weight: bold
+    line-height: 1
+    padding: 10px
+    text-align: center
+    display: block
+  .sidebar
+    display: none
+    margin-top: 15px
+  .district-sub, .metro-sub
+    width: 100%
+  .sidebar__filter:nth-of-type(2n)
+    margin-right: 10px
+  .footer-list
+    min-height: 60px
+    height: auto
+  .footer-list__item
+    margin-right: 0
+    flex: 0 0 100%
+    text-align: center
+    &:last-child
+      margin-left: 0
+  .grid__logo
+    justify-content: flex-start
+  .settings__checkbox
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  .checkbox-wrap
+    flex: 0 0 50%
+    margin-right: 0
+    margin-bottom: 10px
+  .settings-wrap .col-lg-6
+    justify-content: space-between
+
+@media screen and (max-width: 570px)
+  .sidebar__row
+    justify-content: flex-start
+  .header
+    &__logo
+      flex: 0 0 100%
+      &-link
+        justify-content: center
+    &__town
+      margin-left: 0
+      display: none
+      &-text
+        display: none

@@ -1,3 +1,7 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
 //radio btn
 .radio
   text-align: left
@@ -42,7 +46,7 @@
   height: 25px
   display: inline-block
   position: relative
-  padding-left: 30px
+  padding-left: 34px
   cursor: pointer
   color: rgb(37, 37, 37)
   font-size: 14px
@@ -56,10 +60,15 @@
     opacity: 0
     cursor: pointer
   &__value
+    font-family: $font-default
+    font-size: 14px
     text-decoration: underline
+    padding-right: 5px
     &:hover
       text-decoration: none
-
+.extended-filter
+  .checkbox-wrap__value
+    text-decoration: none
 /* Create a custom checkbox */
 .checkbox__text
   border-radius: 4px
@@ -73,7 +82,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .checkbox-wrap input:checked ~ .checkbox__text
-  background-color: #956a2c
+  background: #956a2c
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkbox__text:after
