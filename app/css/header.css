@@ -88,7 +88,7 @@
     .header__ankets-text {
       font-size: 14px;
       font-family: "Open Sans", sans-serif;
-      color: #ff0303;
+      color: #fff;
       line-height: 1.2; }
   .header-mobile__list {
     -webkit-box-flex: 0;
@@ -331,6 +331,33 @@
     display: inline-block;
     width: 35px;
     height: 35px; }
+
+.header__town {
+  position: relative; }
+  .header__town-sub {
+    background: #ffffff;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    position: absolute;
+    top: 120%;
+    left: 40px;
+    width: 100%;
+    display: none;
+    z-index: 1; }
+    .header__town-sub__column {
+      width: 100%; }
+  .header__town-item {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    padding: 5px 15px; }
+    .header__town-item:hover {
+      color: #fb0505;
+      text-decoration: underline; }
+  .header__town-open {
+    display: block; }
 
 .burger {
   border: 1px solid #fff;

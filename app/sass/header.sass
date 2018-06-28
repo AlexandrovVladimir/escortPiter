@@ -84,7 +84,7 @@
     &-text
       font-size: 14px
       font-family: $font-default
-      color: #ff0303
+      color: #fff
       line-height: 1.2
   &-mobile
     &__list
@@ -277,6 +277,34 @@
     display: inline-block
     width: 35px
     height: 35px
+
+
+.header__town
+  position: relative
+  &-sub
+    background: #ffffff
+    border-radius: 2px
+    position: absolute
+    top: 120%
+    left: 40px
+    width: 100%
+    display: none
+    z-index: 1
+    &__column
+      width: 100%
+  &-item
+    cursor: pointer
+    display: inline-block
+    font-size: 13px
+    font-family: $font-default
+    color: rgb(0, 0, 0)
+    padding: 5px 15px
+    &:hover
+      color: #fb0505
+      text-decoration: underline
+  &-open
+    display: block
+
 
 .burger
   border: 1px solid #fff

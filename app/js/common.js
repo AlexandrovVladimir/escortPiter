@@ -103,6 +103,7 @@
     //metro
     const district = document.querySelector('.district');
     const metro = document.querySelector('.metro');
+    const town = document.querySelector('.header__town');
 
     district.addEventListener('click', function(e) {
         if (this.classList.contains('district__open')) {
@@ -126,13 +127,30 @@
             district.lastElementChild.style.display = 'none';
         }
     });
+
+    town.querySelector('.header__town-select').addEventListener('click', function(e) {
+        if (this.parentNode.classList.contains('header__town-open')) {
+            this.parentNode.classList.remove('header__town-open');
+            this.nextElementSibling.style.display = 'none';
+        } else {
+            this.parentNode.classList.add('header__town-open');
+            this.nextElementSibling.style.display = 'flex';
+        }
+    });
     //district and
     //metro
 
     //mobile menu
     $('.burger').click(function() {
         $(this).parent().next().toggle('fast');
-    })
+    });
+
+
+    //checkbox target
+    $('.checkbox-wrap').on('click', '.checkbox__input', function () {
+        window.open('http://google.com');
+    });
+
 })();
 
 window.onload = function () {
