@@ -67,7 +67,15 @@
     &:hover
       text-decoration: none
 .extended-filter
+  .checkbox__text
+    width: 20px
+    height: 20px
+  .checkbox-wrap
+    height: 20px
   .checkbox-wrap__value
+    font-family: $font-default
+    color: rgb(40, 40, 40)
+    line-height: 1.167
     text-decoration: none
 /* Create a custom checkbox */
 .checkbox__text
@@ -82,7 +90,8 @@
 
 /* When the checkbox is checked, add a blue background */
 .checkbox-wrap input:checked ~ .checkbox__text
-  background: #956a2c
+  //background: #956a2c
+  background: #956a2c url(../img/checkbox.png) no-repeat center
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkbox__text:after
@@ -93,11 +102,13 @@
 
 /* Show the checkmark when checked */
 .checkbox-wrap input:checked ~ .checkbox__text:after
-  display: block
+  //display: block
+  display: none
 
 
 /* Style the checkmark/indicator */
 .checkbox-wrap .checkbox__text:after
+  display: none
   left: 9px
   top: 5px
   width: 7px

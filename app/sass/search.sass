@@ -4,10 +4,11 @@
 
 .search
   &__title
-    font-size: 18px
+    font-size: 22.5px
     font-family: $font-default
     color: rgb(37, 37, 37)
     margin-bottom: 15px
+    padding-top: 7px
 
 .extended-filter
   border: 1px solid rgb(218, 218, 218)
@@ -18,21 +19,36 @@
   width: 100%
   display: flex
   align-items: center
-  padding: 0 15px
+  margin-bottom: 12px
+  &-wrapper
+    padding: 0
+    .col-md-12
+      padding: 0
+    .row-first .row
+      padding-left: 15px
+      padding-right: 15px
   .row
+    padding: 5px
+    margin: 0
     width: 100%
+  &__row
+    padding: 0
+    width: 20%
   &__title
     font-size: 16px
     font-family: $font-default
     color: rgb(40, 40, 40)
     font-weight: bold
     line-height: 1
-    text-align: center
+    padding-left: 22.5px
+    margin-bottom: 10px
   .checkbox
     &-wrap
-      padding-left: 22.5px
+      padding-left: 27px
       input:checked ~ .checkbox__text
         background: #956a2c url("../img/checkbox.png") no-repeat center
+        &:after
+          display: none
       &__value
         font-size: 13px
         font-family: $font-default
@@ -42,3 +58,25 @@
       border-radius: 2px
       width: 20px
       height: 20px
+  &__cat
+    background: #956a2c
+    border-radius: 4px
+    font-size: 16px
+    font-family: $font-default
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    line-height: 1.2
+    width: 100%
+    padding: 5px
+    padding-left: 25px
+    margin-bottom: 15px
+
+
+.find
+  background-color: #6b512c
+  &:hover
+    background-color: #4e3615
+.clear
+  background-color: #dca339
+  &:hover
+    background-color: #b27e1e

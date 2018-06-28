@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 .search__title {
-  font-size: 18px;
+  font-size: 22.5px;
   font-family: "Open Sans", sans-serif;
   color: #252525;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding-top: 7px; }
 
 .extended-filter {
   border: 1px solid #dadada;
@@ -22,20 +23,35 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px; }
+  margin-bottom: 12px; }
+  .extended-filter-wrapper {
+    padding: 0; }
+    .extended-filter-wrapper .col-md-12 {
+      padding: 0; }
+    .extended-filter-wrapper .row-first .row {
+      padding-left: 15px;
+      padding-right: 15px; }
   .extended-filter .row {
+    padding: 5px;
+    margin: 0;
     width: 100%; }
+  .extended-filter__row {
+    padding: 0;
+    width: 20%; }
   .extended-filter__title {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: #282828;
     font-weight: bold;
     line-height: 1;
-    text-align: center; }
+    padding-left: 22.5px;
+    margin-bottom: 10px; }
   .extended-filter .checkbox-wrap {
-    padding-left: 22.5px; }
+    padding-left: 27px; }
     .extended-filter .checkbox-wrap input:checked ~ .checkbox__text {
       background: #956a2c url("../img/checkbox.png") no-repeat center; }
+      .extended-filter .checkbox-wrap input:checked ~ .checkbox__text:after {
+        display: none; }
     .extended-filter .checkbox-wrap__value {
       font-size: 13px;
       font-family: "Open Sans", sans-serif;
@@ -46,3 +62,26 @@
             border-radius: 2px;
     width: 20px;
     height: 20px; }
+  .extended-filter__cat {
+    background: #956a2c;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 100%;
+    padding: 5px;
+    padding-left: 25px;
+    margin-bottom: 15px; }
+
+.find {
+  background-color: #6b512c; }
+  .find:hover {
+    background-color: #4e3615; }
+
+.clear {
+  background-color: #dca339; }
+  .clear:hover {
+    background-color: #b27e1e; }

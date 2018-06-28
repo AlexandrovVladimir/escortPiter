@@ -1,0 +1,47 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.static
+  &__title
+    font-family: $font-default
+    color: rgb(37, 37, 37)
+    &-big
+      font-size: 26px
+    &-second
+      font-size: 24px
+      margin-bottom: 13px
+    &-third
+      font-size: 21px
+      margin-bottom: 10px
+  &__text
+    font-family: $font-default
+    font-size: 15px
+    line-height: 1.286
+    &-link
+      color: #fc0404
+      text-decoration: underline
+      &:hover
+        color: #fc0404
+        text-decoration: none
+  &__address
+    font-family: $font-default
+    color: #a78450
+    font-weight: bold
+    text-decoration: underline
+    line-height: 1.286
+
+ol.static__text
+  font-size: 15px
+  padding-left: 30px
+  li
+    padding-bottom: 10px
+
+.table
+  tr
+    background-color: #fff
+    &:nth-of-type(even)
+      background-color: #f8f4eb
+  td
+    border: 1px solid #8d8d8c
+    text-align: center

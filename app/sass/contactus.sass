@@ -1,0 +1,97 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.content-contact-us
+  padding-left: 7px
+.contacts-us
+  &__title
+    font-family: $font-default
+    color: rgb(37, 37, 37)
+    &-big
+      font-size: 26px
+    &-sec
+      font-size: 24px
+      margin-bottom: 13px
+  &__text
+    font-size: 16px
+    line-height: 1.286
+
+.breadcrumbs
+  &__link
+    color: #956a2c
+    font-size: 14px
+    text-decoration: underline
+    &:hover
+      color: #956a2c
+    &-active
+      text-decoration: none
+      color: #000
+      &:before
+        content: '>'
+        margin-right: 2.5px
+      &:hover
+        text-decoration: none
+        color: #000
+
+.form
+  background-color: #ffffff
+  border-radius: 6px
+  width: 660px
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.26)
+  padding: 30px
+  &__row
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: flex-start
+    margin-bottom: 10px
+    &-upload, &-send
+      padding-left: 30%
+      display: flex
+      align-items: center
+      justify-content: center
+  &__label
+    width: 25%
+    color: rgb(37, 37, 37)
+    font-weight: bold
+    line-height: 1.2
+    padding-top: 15px
+    &-custom
+      border: 1px solid rgb(142, 142, 142)
+      border-radius: 3px
+      background-color: rgb(226, 226, 226)
+      cursor: pointer
+      width: 138px
+      height: 36px
+      line-height: 36px
+      text-align: center
+      &-text
+        display: block
+        padding-left: 10px
+  &__input, &__textarea
+    border: 1px solid rgb(142, 142, 142)
+    border-radius: 4px
+    height: 49px
+    width: 75%
+    padding: 5px
+    &:focus
+      border: 1px solid #956a2c
+      outline: none
+  &__textarea
+    resize: none
+    height: 170px
+  &__icon
+    color: #fc0404
+  &__upload
+    display: none
+  &__send
+    display: inline-block
+    border-radius: 3px
+    background-color: rgb(149, 106, 44)
+    width: 284px
+    height: 37px
+    line-height: 37px
+    text-align: center
+    color: #ffffff
+    font-size: 16px

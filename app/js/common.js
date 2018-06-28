@@ -1,7 +1,7 @@
 (function (){
     $('.girls__viewport').slick({
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 750,
         arrows: false,
         dots: false,
         infinite: true,
@@ -9,13 +9,13 @@
         slidesToShow: 16,
         slidesToScroll: 1,
         responsive: [
-            {
-                breakpoint: 2401,
-                settings: {
-                    slidesToShow: 21,
-                    slidesToScroll: 1
-                }
-            },
+            // {
+            //     breakpoint: 2401,
+            //     settings: {
+            //         slidesToShow: 21,
+            //         slidesToScroll: 1
+            //     }
+            // },
             {
                 breakpoint: 2000,
                 settings: {
@@ -131,6 +131,10 @@
 
     //mobile menu
     $('.burger').click(function() {
-        $(this).parent().next().next().toggle('fast');
+        $(this).parent().next().toggle('fast');
     })
 })();
+
+window.onload = function () {
+    $('.girls__image img').css('display', 'block');
+};

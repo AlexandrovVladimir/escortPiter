@@ -2,6 +2,8 @@
 .footer {
   background: #f4d498;
   margin-top: 25px; }
+  .footer .container {
+    padding: 0; }
   .footer-list {
     display: -webkit-box;
     display: -webkit-flex;
