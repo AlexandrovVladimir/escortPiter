@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 .content-contact-us {
-  padding-left: 7px; }
+  padding-left: 24px;
+  max-width: -webkit-calc(100% - 269px);
+  max-width: calc(100% - 269px); }
 
 .contacts-us__title {
   font-family: "Open Sans", sans-serif;
@@ -85,10 +87,15 @@
       width: 138px;
       height: 36px;
       line-height: 36px;
-      text-align: center; }
+      text-align: center;
+      -webkit-transition: background 0.3s linear;
+      -o-transition: background 0.3s linear;
+      transition: background 0.3s linear; }
       .form__label-custom-text {
         display: block;
         padding-left: 10px; }
+      .form__label-custom:hover {
+        background-color: #ccc9c9; }
   .form__input, .form__textarea {
     border: 1px solid #8e8e8e;
     -webkit-border-radius: 4px;
@@ -116,4 +123,11 @@
     line-height: 37px;
     text-align: center;
     color: #ffffff;
-    font-size: 16px; }
+    font-size: 16px;
+    -webkit-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear; }
+    .form__send:hover {
+      background-color: #795624;
+      color: #ffffff;
+      text-decoration: none; }

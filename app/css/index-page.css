@@ -214,6 +214,22 @@
   .content__pagination-item {
     display: inline-block;
     padding: 0 5px; }
+    .content__pagination-item .arrow-left {
+      background: url("../img/arrow-left.png") no-repeat center;
+      cursor: pointer;
+      display: block;
+      width: 24px;
+      height: 11px; }
+      .content__pagination-item .arrow-left:hover {
+        background: url("../img/arrow-left-hover.png") no-repeat center; }
+    .content__pagination-item .arrow-right {
+      background: url("../img/arrow-right.png") no-repeat center;
+      cursor: pointer;
+      display: block;
+      width: 24px;
+      height: 11px; }
+      .content__pagination-item .arrow-right:hover {
+        background: url("../img/arrow-right-hover.png") no-repeat center; }
   .content__pagination-link {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
@@ -264,6 +280,10 @@
     -webkit-flex: 0 0 282px;
         -ms-flex: 0 0 282px;
             flex: 0 0 282px; }
+    .grid__item-map {
+      margin-bottom: 0; }
+      .grid__item-map .grid__phone {
+        font-size: 13px; }
     .grid__item:hover {
       border: 2px solid #8e723f; }
   .grid__name {
@@ -278,11 +298,17 @@
       color: #ff0303;
       text-decoration: none; }
   .grid__phone {
-    font-size: 15px;
-    font-family: "Open Sans", sans-serif;
-    color: #ff0303;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif !important;
+    color: #ff0303 !important;
     font-weight: bold;
-    padding: 2.5px 0; }
+    padding: 2.5px 0;
+    -webkit-appearance: none; }
+    .grid__phone:hover {
+      color: #ff0303;
+      text-decoration: none; }
   .grid__image {
     cursor: pointer;
     position: relative; }
@@ -342,10 +368,10 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 3px 5px; }
     .grid__row:nth-of-type(odd) {
       background: #f4ecdb; }
@@ -368,4 +394,7 @@
   .grid__text, .grid__time {
     line-height: 1.2;
     font-size: 12px;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    width: 50%; }
+  .grid__text:nth-of-type(2) {
+    padding-left: 6px; }

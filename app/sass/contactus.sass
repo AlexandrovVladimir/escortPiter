@@ -3,7 +3,8 @@
 @import 'fonts'
 
 .content-contact-us
-  padding-left: 7px
+  padding-left: 24px
+  max-width: calc(100% - 269px)
 .contacts-us
   &__title
     font-family: $font-default
@@ -66,9 +67,12 @@
       height: 36px
       line-height: 36px
       text-align: center
+      transition: background 0.3s linear
       &-text
         display: block
         padding-left: 10px
+      &:hover
+        background-color: #ccc9c9
   &__input, &__textarea
     border: 1px solid rgb(142, 142, 142)
     border-radius: 4px
@@ -95,3 +99,8 @@
     text-align: center
     color: #ffffff
     font-size: 16px
+    transition: background 0.3s linear
+    &:hover
+      background-color: #795624
+      color: #ffffff
+      text-decoration: none

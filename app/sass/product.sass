@@ -1,0 +1,275 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.product-container
+  .breadcrumbs
+    margin-bottom: 15px
+
+.product
+  width: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  overflow: hidden
+  &__photos
+    flex: 0 0 449px
+    &-big
+      margin-bottom: 20px
+      &-link
+        display: block
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: rgba(0,0,0,0.6)
+          display: none
+        &:hover
+          &:after
+            display: block
+        &:focus
+          outline: none
+        img
+          width: 100%
+    &-thumb
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      &-link
+        display: block
+        margin-bottom: 10px
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: rgba(0,0,0,0.6)
+          display: none
+        &:hover
+          &:after
+            display: block
+        &:focus
+          outline: none
+        img
+          width: 100%
+          height: 145px
+  &__title
+    color: #2c2c2c
+    font-size: 24px
+    font-family: $font-default
+    line-height: 1
+    flex: 0 0 100%
+  &__information
+    flex: 0 0 calc(100% - 449px)
+    padding-left: 24px
+    .grid
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      padding-left: 0
+      .extended-filter__cat
+        margin: 5px
+        font-size: 14px
+        width: auto
+      &__item
+        border: none
+        flex: 0 0 49%
+        &:hover
+          border: none
+        &:first-child
+          .half
+            padding-top: 0
+        &-data
+          .half
+            width: 100% !important
+        &-map
+          flex: 0 0 100%
+        &-about
+          padding-bottom: 5px
+          flex: 0 0 100%
+          .half
+            &:last-child
+              border-left: 1px solid #eee !important
+            p
+              font-family: $font-default
+              font-size: 14px
+              line-height: 1.2
+              padding-left: 15px
+              padding-right: 15px
+              padding-bottom: 15px
+        .half
+          width: 50%
+          padding: 5px
+      &__type
+        color: #404040
+        font-family: $font-default
+        font-size: 14px
+        font-weight: bold
+        padding-left: 5px
+      &__row
+        min-height: 22px
+        &:nth-of-type(odd)
+          background: #ffffff
+        &:nth-of-type(even)
+          background: #f4ecdb
+      &__text
+        &-cat
+          color: #956b2e
+          font-size: 13px
+          font-weight: bold
+          text-decoration: underline
+          &:hover
+            color: #956b2e
+  &__stats
+    width: 100%
+    padding: 10px 0
+    &:after
+      content: ''
+      clear: both
+      display: table
+  &__phone
+    background: url("../img/mob.png") no-repeat 0 center
+    padding-left: 25px
+    margin-bottom: 10px
+  &__dist
+    background: url("../img/loc.png") no-repeat 0 center
+    font-size: 14px
+    margin-bottom: 10px
+    padding-left: 25px
+    &-link
+      font-weight: bold
+      font-size: 14px
+      color: #ff0303
+      text-decoration: underline
+      &:hover
+        color: #ff0030
+  &__metro
+    background: url("../img/girl-big-logo.png") no-repeat 0 center
+    font-size: 14px
+    margin-bottom: 10px
+    padding-left: 25px
+    &-link
+      font-weight: bold
+      font-size: 14px
+      color: #ff0303
+      text-decoration: underline
+      &:hover
+        color: #ff0030
+  &__services
+    flex: 0 0 100%
+    .grid
+      padding-left: 0
+      .extended-filter__cat
+        font-size: 14px
+        width: auto
+      &__item
+        border: none
+        padding: 5px
+        &:hover
+          border: none
+    .list-services
+      flex: 0 0 25%
+      padding-left: 25px
+      &__item
+        &-title
+          color: #404040
+          font-family: "Open Sans", sans-serif
+          font-size: 14px
+          font-weight: bold
+          margin-bottom: 10px
+      &__link
+        background: url("../img/minnus.png") no-repeat 0 center
+        display: block
+        color: #a8a7a4
+        font-family: "Open Sans", sans-serif
+        font-size: 13px
+        padding-left: 25px
+        &-active
+          background: url("../img/plus.png") no-repeat 0 center
+          color: #956a2c
+          font-weight: bold
+      &-wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+.grid-nearby
+  margin-top: 20px
+  padding-left: 0
+  flex: 0 0 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  .grid
+    &__phone
+      font-size: 15px
+    &__item
+      flex: 0 0 282px
+
+.video
+  &:after
+    content: ''
+    clear: both
+    display: table
+  .half
+    position: relative
+    height: 96px
+  &__text
+    font-size: 14px
+  &__link
+    color: #ff0030
+    font-size: 14px
+    text-decoration: underline
+    &:hover
+      color: #ff0030
+      text-decoration: none
+  &__time
+    position: absolute
+    bottom: 0
+    left: 0
+  &__image
+    &-link
+      display: block
+      position: relative
+      &:before
+        border: 10px solid transparent
+        border-left: 15px solid #83531e
+        content: ''
+        position: absolute
+        left: 47%
+        top: 50%
+        transform: translate(0, -50%)
+        z-index: 1
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(0,0,0,0.6)
+        display: none
+      &:hover
+        &:after
+          display: block
+        &:before
+          border-left: 15px solid #fff
+      &:hover ~ img
+        filter: brightness(0)
+    img
+      width: 100%
+      height: 96px
+  &__play
+    width: 43px !important
+    height: 43px !important
+    cursor: pointer
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)

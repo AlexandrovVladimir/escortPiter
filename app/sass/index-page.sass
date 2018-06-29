@@ -79,6 +79,22 @@
     &-item
       display: inline-block
       padding: 0 5px
+      .arrow-left
+        background: url("../img/arrow-left.png") no-repeat center
+        cursor: pointer
+        display: block
+        width: 24px
+        height: 11px
+        &:hover
+          background: url("../img/arrow-left-hover.png") no-repeat center
+      .arrow-right
+        background: url("../img/arrow-right.png") no-repeat center
+        cursor: pointer
+        display: block
+        width: 24px
+        height: 11px
+        &:hover
+          background: url("../img/arrow-right-hover.png") no-repeat center
     &-link
       font-size: 14px
       font-family: $font-default
@@ -125,6 +141,10 @@
     overflow: hidden
     margin-bottom: 15px
     flex: 0 0 282px
+    &-map
+      margin-bottom: 0
+      .grid__phone
+        font-size: 13px
     &:hover
       border: 2px solid #8e723f
   &__name
@@ -139,11 +159,17 @@
       color: #ff0303
       text-decoration: none
   &__phone
-    font-size: 15px
-    font-family: $font-default
-    color: #ff0303
+    cursor: pointer
+    display: block
+    font-size: 16px
+    font-family: $font-default !important
+    color: #ff0303 !important
     font-weight: bold
     padding: 2.5px 0
+    -webkit-appearance: none
+    &:hover
+      color: #ff0303
+      text-decoration: none
   &__image
     cursor: pointer
     position: relative
@@ -190,7 +216,7 @@
       line-height: 1.2
   &__row
     display: flex
-    justify-content: space-between
+    justify-content: flex-start
     padding: 3px 5px
     &:nth-of-type(odd)
       background: #f4ecdb
@@ -214,6 +240,10 @@
     line-height: 1.2
     font-size: 12px
     font-family: $font-default
+    width: 50%
+  &__text
+    &:nth-of-type(2)
+      padding-left: 6px
 
 
 

@@ -147,10 +147,15 @@
 
 
     //checkbox target
-    $('.checkbox-wrap').on('click', '.checkbox__input', function () {
-        window.open('http://google.com');
-    });
+    // $('.settings .checkbox-wrap').on('click', '.checkbox__input', function () {
+    //     window.open('http://google.com');
+    // });
 
+    $(window).resize(function(){
+        if ($(window).width() > 900) {
+            $('.sidebar').css('display', 'block');
+        }
+    });
 })();
 
 window.onload = function () {
